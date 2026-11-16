@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        - VITE_PORT=${VITE_PORT}
+      dockerfile: Dockerfile.dev
+    ports:
+      - "${VITE_PORT}:${VITE_PORT}"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_BASE_URL=${VITE_BASE_URL}
+    command: npm run dev
+    env_file:
+      - .env

@@ -1,0 +1,75 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Roboto", "Helvetica", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+    background-color: white;    
+    margin: 0;
+    padding: 0;
+}
+
+/* Elimina la flecha (tail) completamente */
+.gm-style .gm-style-iw-t::after,
+.gm-style .gm-style-iw-t::before {
+  display: none !important;
+}
+
+/* Quita padding, sombra, bordes y fondo del contenedor principal */
+.gm-style .gm-style-iw-c {
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: auto !important;          /* deja que tu Paper controle el ancho */
+  max-width: none !important;
+}
+
+/* Elimina overflow y scrollbars innecesarios */
+.gm-style .gm-style-iw-d {
+  overflow: visible !important;    /* o hidden si prefieres */
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+/* A veces queda un wrapper extra con padding */
+.gm-style .gm-style-iw {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+/* Opcional: si queda espacio en blanco arriba o abajo */
+.gm-style .gm-style-iw > div {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Si usas close button y lo quieres ocultar o mover */
+.gm-style .gm-ui-hover-effect {
+  display: none !important;        /* oculta la "X" por defecto */
+  /* o right: 8px !important; top: 8px !important; si lo quieres mantener */
+}
+
+.location-input::placeholder {
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+.Check-in-input::placeholder {
+  color: black;
+  font-weight: 500;
+}
+.Check-out-input::placeholder {
+  color: black;
+  font-weight: 500;
+}

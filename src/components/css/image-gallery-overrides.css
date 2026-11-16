@@ -1,0 +1,33 @@
+/* El contenedor del slide ocupa siempre el alto del modal */
+.image-gallery-slide-wrapper {
+  height: 100%;
+}
+
+/* Centrado perfecto */
+.image-gallery-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen sin deformar */
+.image-gallery-image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Opcional: suaviza miniaturas */
+.image-gallery-thumbnail img {
+  object-fit: cover;
+}
+/* Esto obliga a la imagen a caber siempre en el visor con margen */
+.image-gallery-content {
+  border-radius: 12px;
+}
+
+.image-gallery-image {
+  max-height: 70vh !important; /* Ajusta este valor según prefieras */
+  object-fit: contain !important; 
+  background: #000;
+}

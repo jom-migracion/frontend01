@@ -1,0 +1,13 @@
+# Excluir directorios y archivos de desarrollo
+node_modules
+dist
+.git
+Dockerfile
+docker-compose.dev.yml
+docker-compose.prod.yml
+
+# Excluir archivos de registro y temporales
+npm-debug.log
+
+# Excluir otros archivos y directorios opcionales
+.vscode
